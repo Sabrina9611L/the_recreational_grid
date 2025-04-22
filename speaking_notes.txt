@@ -1,0 +1,145 @@
+Hello. My name is Sabrina and I would like to present to you "The Recreational Grid: An Analysis of Tennessee's Trails, Parks and People"
+
+As someone who loves to hike, I wanted to explore Tennessee's trail data. This lead me to also look into community inequality, by this I mean I quickly noticed that not all communities have the same level of access to parks, trails, and recreational space. 
+
+I’ve always believed that access to nature and outdoor spaces shouldn’t depend on where you live or how much you make. I wanted to use data to uncover where the gaps are, who’s being left out, and how we can make smarter decisions about where to invest in trails and parks.
+
+
+
+
+My goal was to understand how accessible outdoor recreation is in Tennessee and where future investments should be prioritized.
+
+I began by asking: "How accessible is outdoor recreation in Tennessee, and where should future trail or park investments be prioritized?"
+
+To answer this I analyzed median income, population, number of reservations, and trail mileage by ZIP code.
+
+I created a normalized scoring system, weighted the factors, and produced a composite ranking from 0 to 1.
+
+Using that, I built a map where you can filter by priority level to visually show where new trails are most needed.
+
+As you can see zipcode 37738 is most in need.
+
+
+This brings me to my second question, "Can we rank zipcodes for trail expansion priority?"
+
+And yes, using the same logic I was able to create a bar chart listing the top 10 zipcodes most in need for trail investment.
+
+
+
+
+In the next page, we pull in my favorite question. "Are there rail segments that run near parks or residential areas that are inactive and could be repurposed?"
+
+In the data, I found all of the rails that were deemed inactive, abandoned or out of service.
+
+I then looked to see which were close to parks and residential areas and added a layer to the map to show areas that were high in population and low in outdoor public recreation.
+
+I then overlayed the trails that are available (in black), none of which lie within my high need zones (The teal areas) and I overlayed the last layer, the abandoned railway segments (in brown). 
+
+As you can see there is one major abandoned railway that runs through not 1 but 4 high need areas, making it a strong candidate for trail conversion.
+
+Next I asked "Where are the largest trail gaps between parks, trails, and residential areas?"
+
+To answer this question, I created a buffer on the trails dataset. 
+
+I did a spatial join to ensure that I only grabbed residential zipcodes, parks, and railways, with no contact to the buffered trails. 
+
+I then made a map to show where the largest trail gaps between parks rails and residential areas were. 
+
+This helps us to see where some of the deficiencies are in outdoor recreation planning for the state of Tennessee.
+
+
+
+
+On my next page I asked "Which zipcodes have high public land density but low population density?"
+
+Combining trails, parks, and outdoor reservation data, I made a measure for population density and public land density. I did this by taking the total population divided by the total land area. I then took the area of the parks and trails and divided it by the total area.
+
+Utilizing these two new measures I was able to pull out the top 10 zipcodes with the highest density of public land. As you can see, the top two zips have no population density. 
+
+this could imply that they are national parks or commercial real-estate.
+
+Sticking to the same logic, I then asked "How much of each zipcode is covered by recreational infrastructure?"
+
+First I identified all types of recreational land, and calculated their footprint, including trails, which I buffered to account for total area size.
+
+I summed up the total recreational area in each zipcode and divided it by the zipcode’s total land area to get the recreational percentage.
+
+I then pulled the top 10 zipcodes with the highest percentage of recreational land.
+
+
+
+
+
+Next I asked "Are there trail deserts (zipcodes or areas with no trails within 1 mile)?"
+
+To answer this I joined the trails data with the zipcode data, and pulled all of the zipcodes that were at least 1 mile outside of the boundaries of any trail in Tennessee. 
+
+I then mapped them out here, which shows that yes there are trail deserts and it covers a significant portion of zipcodes in Tennessee.
+
+Looking in the opposite direction I asked "Which zipcodes have the longest total trail length?"
+
+To do this, I did a spatial join between the trails data and zipcodes and did a sum of all of the trail lengths in each of the zipcodes. I then pulled out the top 10 zipcodes based on their trail lengths.
+
+One zipcode did stand out with over 100 miles of trails and that was zipcode 37187.
+
+
+
+
+Now We're trying to see if there's a relationship between economic status and participation in outdoor recreation by answering "Do lower-income or rural zipcodes make fewer reservations?"
+
+First we look at the visual and each point that represents a zipcode
+
+Along the x axis we have the median income and the y axis represents reservation counts. 
+
+You can see that there is a positive trend, meaning higher-income zipcodes tend to make more reservations vs lower-income zipcodes.
+
+Next we have "Which zipcodes generate the most outdoor reservations?"
+
+Here we're analyzing where outdoor reservations are coming from by looking at the zipcodes of the customers who made them.
+
+This helps us to understand which communities are most actively using outdoor recreation resources.
+
+Using this table with the visuals that came before, planners could target where to invest based on the zipcodes that show the highest demand for resources.
+
+The bar chart also shows the average number of people per reservation and the average amount spent per reservation, to further analyze the types of recreation to address.
+
+
+
+
+The next question that I asked was "How does median income vary across zipcodes with high vs. low recreation access scores?"
+
+I wanted to see if income level came into play with the accessibility of trails. I did this by simply looking the level of access of each area and finding the corresponding incomes. 
+
+Low access is defined as any area that has access to less than the median length of trails nearby, whilst the high access was above the median trail length. 
+
+I then graphed that against the median income, and as you can see high access looks to be highly related to high income and vice versa.
+
+
+
+
+In Conclusion,
+
+Through this project, I set out to understand how accessible outdoor recreation really is in Tennessee and what the data reveals is both eye-opening and actionable.
+
+We can clearly see that not all communities have equal access to trails and parks. Some areas are thriving, while others are essentially trail deserts, with little to no infrastructure supporting outdoor activity.
+
+By identifying which zipcodes are most in need, where trail gaps exist, and even highlighting opportunities like abandoned railways, this analysis offers a data-driven path forward.
+
+It shows us where investments will have the greatest impact, and helps ensure that future planning includes the communities that have been left out.
+
+Thank you for your time, and I hope this project inspires new ways to bridge those gaps and build a healthier, more connected Tennessee.
+
+
+
+
+Issues I experienced
+
+•Struggled with buffering geometries to accurately detect trail intersections.
+
+•Faced issues preserving original geometries when exporting data to Tableau.
+
+•Experienced delays locating and securing the initial dataset.
+
+•Encountered formatting problems that affected the functionality of some visualizations.
+
+•Had to manage extreme outliers in the median income data, which skewed analysis.
