@@ -108,7 +108,7 @@ The bar chart also shows the average number of people per reservation and the av
 
 The next question that I asked was "How does median income vary across zipcodes with high vs. low recreation access scores?"
 
-I wanted to see if income level came into play with the accessibility of trails. I did this by simply looking the level of access of each area and finding the corresponding incomes. 
+I wanted to see if income level came into play with the accessibility of trails. I did this by simply looking at the level of access of each area and finding the corresponding incomes. 
 
 Low access is defined as any area that has access to less than the median length of trails nearby, whilst the high access was above the median trail length. 
 
@@ -123,7 +123,7 @@ Through this project, I set out to understand how accessible outdoor recreation 
 
 We can clearly see that not all communities have equal access to trails and parks. Some areas are thriving, while others are essentially trail deserts, with little to no infrastructure supporting outdoor activity.
 
-By identifying which zipcodes are most in need, where trail gaps exist, and even highlighting opportunities like abandoned railways, this analysis offers a data-driven path forward.
+By identifying which zipcodes are most in need, where trail gaps exist, and even highlighting opportunities like abandoned railways, this analysis offers a data driven path forward.
 
 It shows us where investments will have the greatest impact, and helps ensure that future planning includes the communities that have been left out.
 

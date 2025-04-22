@@ -39,24 +39,34 @@ I want to deliver a reproducible spatial analysis of outdoor recreation access a
 # Data Sources
 •	Tennessee Transportation (GPKG)
 https://prd-tnm.s3.amazonaws.com/StagedProducts/Tran/GPKG/TRAN_Tennessee_State_GPKG.zip
+
 •	TN State Parks Points
 https://gis.tnstateparks.com/datasets/d4ef724303da4619ba2972e00e716f03_0/explore
+
 •	TN Public Trails
 https://gis.tnstateparks.com/datasets/d67ab502132f4b12ac2c1ab34eb8cac6_0/explore
+
 •	TN Public Parks (API)
 https://services1.arcgis.com/YuVBSS7Y1of2Qud1/arcgis/rest/services/Tennessee_Statewide_Trails_Lines_Public/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=json
+
 •	USGS Elevation (EPQS)
 https://apps.nationalmap.gov/epqs/
+
 •	USGS ScienceBase Geodata
 https://www.sciencebase.gov/catalog/item/62a96b9bd34ec53d2770f2c0
+
 •	Protected Areas/Trail Data
 https://www.sciencebase.gov/catalog/item/652d4f80d34e44db0e2ee45c
+
 •	Recreation.gov Facility Data (RIDB)
 https://ridb.recreation.gov/download
+
 •	Census Data Access
 https://data.census.gov/
+
 •	US Census API Signup
 https://api.census.gov/data/key_signup.html
+
 
 # Known Issues and Challenges
 I know that with the amount of data I have gathered, I will be able to do a thorough analysis. I also recognize that there will be many struggles cleaning the data and ensuring compatibility. The data I had initially opted to use, was not a viable option and I am hoping that this new data will lend to a robust and fruitful capstone project.
