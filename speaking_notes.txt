@@ -91,7 +91,7 @@ First we look at the visual and each point that represents a zipcode
 
 Along the x axis we have the median income and the y axis represents reservation counts. 
 
-You can see that there is a positive trend, meaning higher-income zipcodes tend to make more reservations vs lower-income zipcodes.
+You can see that there is a positive trend, meaning higher-income zipcodes tend to make more reservations vs lower-income zipcodes, though this only shows a slight positive correlation of .065.
 
 Next we have "Which zipcodes generate the most outdoor reservations?"
 

@@ -1,5 +1,7 @@
 # The Recreational Grid 
 
+https://public.tableau.com/views/Book1_17454412324130/TheRecreationalGrid?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+
 # Executive Summary
 In this capstone project, I want to look at a variety of data to explore the accessibility, equity, and quality of outdoor recreation across Tennessee. Using geospatial and demographic data, the project identifies underserved communities, evaluates the physical and environmental features of existing recreational infrastructure, and offers data-driven recommendations for expanding access to parks and trails. 
 
